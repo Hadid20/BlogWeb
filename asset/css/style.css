@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,500&display=swap');
+
+:root{
+    --textOne : #6b00ff;
+    /* --textOnegit : #008080
+    ;
+    --textTwo : #E2725b; */
+    --textTwo : #0015ff;
+    --maxWidht : 1020px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+   margin: 0;
+   padding: 0;
+   
+}
+
+.navContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--textOne);
+    margin: 0.3rem 3.5rem;
+}
+
+.linkContainer{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+.link a{
+    text-decoration: none;
+    color: var(--textTwo);
+    transition: 0.5s;
+}
+
+.link a:hover{
+    color: var(--textOne);
+    text-decoration: underline;
+}
+
+/*  */
+.hero{
+       margin: 0;
+    
+}
+
+.heroContainer {
+    margin: 0.8rem 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    
+}
+
+
+.cardHero:hover{
+    animation: animate infinite 5s alternate;
+}
+
+@keyframes animate {
+    form{
+        background-color: var(--textOne);
+        content: 'Hallo';
+    }
+    to{
+        background-color: var(--textTwo);
+        content: 'Salam Kenal';
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8rem;
+    
+}
+
+.text h1{
+    font-weight: 400;
+    color: var(--textTwo);
+    font-size: 2rem;
+}
+.text h1 span{
+    font-size: 1.8rem;
+}
+
+.nameText{
+    font-size: 2.5rem;
+    color: var(--textOne);
+    font-weight: 600 ;
+}
+
+#btnHello{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--textTwo);
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#btnHello:hover{
+    background-color: var(--textOne);
+}
+
+.cardHero{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    color: white;
+    font-weight:600 ;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.cardHero span::before{
+    content: '';
+    animation: animate2 infinite 10s ;
+}
+
+@keyframes animate2 {
+    0%{
+        content: '';
+    }
+    50%{
+        content: 'Hallo';
+    }
+    100%{
+        content: 'Salam Kenal';
+    }
+}
+
+/*  */
+.hero2{
+    margin: 0;
+}
+.hero2Container{
+    margin: 2rem 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   
+   gap: 2.5rem;
+   align-items: center;
+   
+    
+    
+}
+.hero2 fieldset{
+    margin-top: 5rem;
+    border: 2px solid var(--textOne);
+    border-radius: 5px;
+    border-left:none;
+    border-right: none;
+}
+
+.hero2 legend{
+    /* margin: 0rem 3.5rem; */
+    margin-left: 3.5rem;
+    color: var(--textOne);
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: var(--textOne);
+    width: fit-content;
+    padding: 0.8rem 1rem;
+    color: white;
+    border: none;
+    border-radius: 10px 2px 15px 2px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardHero2{
+    background-image: url(https://th.bing.com/th/id/OIP._wBpY7W1Ja-oCtr-DtJLGAAAAA?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* outline: none; */
+    transition: 1s all;
+    font-size: 1rem;
+}
+
+.cardHero2:hover{
+    outline: none;
+    transform: scale(0.99);
+}
+
+.cardHero2{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing:border-box ;
+    padding: 10px;
+}
+
+.cardHero2 h3{
+    margin-top: 7rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+/*  */
+.footer{
+    margin: 0;
+}
+
+.footerContainer{
+    margin: 3rem 3.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.ListLinkFooter{
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+}
+
+.ListLinkFooter a img{
+    transition: 1s;
+}
+
+.ListLinkFooter a img:hover{
+    transform: scale(0.9);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.textFinish span{
+    font-weight: 600;
+    color: var(--textOne);
+}
+
